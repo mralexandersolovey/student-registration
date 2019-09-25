@@ -10,7 +10,7 @@ Student registration - Spring boot application
 {
    "name": "John Smith",
   "newCourseIds": [
-    "<courseID>"
+    "courseID"
   ]
 }
 7. Delete a student along with the course registrations by making this DELETE request: http://localhost:8080/api/students/<studentId> 
