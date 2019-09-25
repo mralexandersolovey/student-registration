@@ -13,6 +13,6 @@ Student registration - Spring boot application
     "courseID"
   ]
 }
-7. Delete a student along with the course registrations by making this DELETE request: http://localhost:8080/api/students/<studentId> 
+7. Delete a student along with the course registrations by making this DELETE request: http://localhost:8080/api/students/studentId
 4. List students registered for a course named "Test course" : http://localhost:8080/api/courses/Test%20course/students
 
