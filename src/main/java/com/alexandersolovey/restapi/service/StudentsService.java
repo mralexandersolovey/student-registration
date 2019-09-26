@@ -61,11 +61,9 @@ public class StudentsService {
     }
     
     @Transactional
-    public void deleteStudent(String id) {
-    	for(StudentCourseRegistration scr : listStudentCourses(id)) {
-    		deleteStudentCourse(scr);
-    	}
-    	studentRepository.delete(id);
+    public void deleteStudent(String studentId) {
+    	studentCourseRegistrationRepository.deleteStudentRegistrations(studentId);
+    	studentRepository.delete(studentId);
     }    
 
     public Student updateStudent(Student studentToUpdate, String id) {
